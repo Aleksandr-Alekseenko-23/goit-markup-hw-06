@@ -516,19 +516,33 @@
 .request {
     margin-left: 70px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    text-transform: uppercase;
     
 }
 .add-2 {
     margin-left: 70px;
     padding-left: 0px;
 }
+
+.button-subscription {
+    background-color:#2196F3;
+  
+}
+.subscription .icon {
+    fill: #FFFFFF;
+}
+
+
+
+
+
+
+
 .button-portfolio {
     display: flex;
     justify-content: center;
