@@ -52,29 +52,45 @@
           <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal-form-container">
-              <button class="close-btn" data-modal-close>x</button>
+              <button class="close-btn" data-modal-close>
+                <svg class="close-btn-icon" width="30" height="30">
+                  <use href="./images/symbol-defs2.svg#icon-close"></use>
+                </svg>
+              </button>
 
-              <form>
-                <div class="modal-form">
+              <form class="modal-form">
                   <p class="modal-form-text">Оставьте свои данные, мы вам перезвоним</p>
-                  <label class="username">
-                    Имя
-                    <input type="text" name="username" autofocus />
-                  </label>
-                  <label class="phone">
-                    Телефон
-                    <input type="tel" name="phone_number" />
-                  </label>
-                  <label class="modal-form-mail">
-                    Почта
-                    <input type="email" name="email" />
-                  </label>
-                  <label>
-                    Feedback
-                    <textarea name="feedback" rows="5" placeholder="Type your message here..."></textarea>
-                  </label>
-                  <button type="submit">Submit</button>
+                  <div class="username general-modal">
+                    <label for="username" class="username-label general-label">Имя</label>
+                    <input type="text" name="username" autofocus id="username" class="username-input general-input" />
+                  <span class="username-icon"><svg width="18px" height="18px"><use href="./images/symbol-defs2.svg#icon-person-black"></use></svg></span>
+                  </div>
+                  <div class="phone general-modal">
+                    <label class="phone-label general-label">Телефон</label>
+                    <input type="tel" name="phone_number" class="phone-input general-input" />
+                  <span class="phone-icon"><svg width="18px" height="18px"><use href="./images/symbol-defs2.svg#icon-phone-black"></use></svg></span>
+                  </div>
+                  <div class="modal-form-mail general-modal">
+                    <label class="general-label">Почта</label>
+                    <input type="email" name="email" class="mail-input general-input" />
+                    <span class="mail-icon"><svg width="18px" height="18px"><use href="./images/symbol-defs2.svg#icon-email-black"></use></svg></span>
+                  </div>
+                  <div class="feedback general-modal">
+                    <label class="feedback-label general-label">Комментарий</label>
+                    <textarea name="feedback" rows="5" placeholder="Введите текст" class="feedback-input general-input general-label"></textarea>
+                  </div>
+                  <div class="checkbox">
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="hobby" value="sports" checked class="checkbox-input" />
+                      <span class="checkbox-icon"></span>
+                      Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">
+                          Условия договора</a>
+                      
+                    </label>
                 </div>
+                  <div class="button-send-modal">
+                    <button type="submit" class="button-send">Отправить</button>
+                  </div>
               </form>
             </div>
       
@@ -422,15 +438,17 @@
             </ul>
           </div>
           <div class="subscription">
-            <form action="" class="sub-form">
+            <form class="sub-form">
               <label for="mailing-list" class="sub-label">Подпишитесь на рассылку</label>
               <div class="form-item">
                 <input type="text" name="subscription" placeholder="E-mail" class="sub-input" id="mailing-list">
               
                 <button type="submit" class="button-subscription">Подписаться
-                  <svg class="icon">
-                    <use src="./images/symbol-defs2.svg#icon-twitter"></use>
+                  
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs2.svg#icon-icon-send"></use>
                   </svg>
+                
                 </button>
               </div>
             </form>
