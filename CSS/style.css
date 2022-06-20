@@ -314,7 +314,7 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);
 
 }
 
-.close-btn .close-btn-icon:hover {
+.close-btn .close-btn-icon:hover, .close-btn .close-btn-icon:focus {
     fill: #2196F3;
 }
 
@@ -441,7 +441,7 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .feedback-input {
-    color: rgba(117, 117, 117, 0.5);
+    color: #000;
     height: 120px;
     padding: 16px 12px;
     margin-bottom: 0;
@@ -488,6 +488,7 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .checkbox-link {
+    outline: none;
     text-decoration: none;
     border-bottom: 1px solid #2196f3;
     
@@ -870,6 +871,7 @@ text-transform: uppercase;
 color: #FFFFFF;
    
 }
+
 .sub-input {
    width: 358px;
    height: 50px;
@@ -882,9 +884,9 @@ color: #FFFFFF;
     line-height: 1.25;
     letter-spacing: 0.03em;
 
-    color: rgba(255, 255, 255, 0.6);
-  
+    color: #000;
 }
+
 .button-subscription {
     display: inline-flex;
     justify-content: center;
