@@ -306,6 +306,7 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);
      border: 0;
      display: block;
      background: #fff;
+     outline: none;
  }
 
  .close-btn-icon {
@@ -528,6 +529,7 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);
 
     padding: 10px 56px;
     cursor: pointer;
+    
  }
                     /* ПРЕЙМУЩЕСТВА  */
 
