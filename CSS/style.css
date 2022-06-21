@@ -291,7 +291,7 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);
      border-radius: 4px;
      position: fixed;
      width: 528px;
-     height: 581px;
+     
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
@@ -322,7 +322,10 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);
  .modal-form {
      display: flex;
      flex-direction: column; 
-     padding: 40px 40px;
+     padding-top: 40px;
+     padding-left: 41px;
+     padding-right: 39px;
+     padding-bottom: 25px;
 }
 
  .modal-form-text {
